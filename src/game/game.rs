@@ -21,7 +21,7 @@ const radius: f64 = 50.0;
 pub const PI: f64 = 3.14159265358979323846264338327950288f64;
 
 const INITIAL_X: f64 = 40.0;
-const INITIAL_Y: f64 = 20.0;
+const INITIAL_Y: f64 = 25.0;
 
 pub struct GameObjects {
     particles: Vec<Particle>,
@@ -64,7 +64,7 @@ pub fn game_init(number_of_particles: usize, rng: &mut ThreadRng) -> Result<Game
         ));
     }
 
-    game_state.game_objects.atractors.push(arr1(&[49.0, 49.0]));
+    //game_state.game_objects.atractors.push(arr1(&[49.0, 49.0]));
     game_state.game_objects.atractors.push(arr1(&[79.0, 49.0]));
     game_state.game_objects.atractors.push(arr1(&[19.0, 49.0]));
 
